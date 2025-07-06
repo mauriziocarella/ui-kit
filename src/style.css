@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+
+    --color-success: oklch(70.463% 0.17 142.49);
+    --color-success-50: oklch(92.627% 0.11 142.49);
+    --color-success-100: oklch(90.164% 0.13 142.49);
+    --color-success-200: oklch(85.239% 0.14 142.49);
+    --color-success-300: oklch(80.313% 0.15 142.49);
+    --color-success-400: oklch(75.388% 0.16 142.49);
+    --color-success-500: oklch(70.463% 0.17 142.49);
+    --color-success-600: oklch(65.537% 0.18 142.49);
+    --color-success-700: oklch(60.612% 0.19 142.49);
+    --color-success-800: oklch(55.687% 0.20 142.49);
+    --color-success-900: oklch(50.761% 0.21 142.49);
+    --color-success-950: oklch(48.299% 0.22 142.49);
+    --color-success-foreground: oklch(100% 0 none);
+
+    --color-error: oklch(63.683% 0.20785 25.331);
+    --color-error-50: oklch(77.777% 0.112 19.922);
+    --color-error-100: oklch(75.789% 0.12392 20.375);
+    --color-error-200: oklch(72.304% 0.14758 21.394);
+    --color-error-300: oklch(69.124% 0.16821 22.496);
+    --color-error-400: oklch(66.271% 0.18979 23.868);
+    --color-error-500: oklch(63.683% 0.20785 25.331);
+    --color-error-600: oklch(61.572% 0.22246 26.796);
+    --color-error-700: oklch(60.161% 0.23355 28.071);
+    --color-error-800: oklch(57.826% 0.23006 28.564);
+    --color-error-900: oklch(54.387% 0.21559 28.488);
+    --color-error-950: oklch(52.436% 0.20761 28.464);
+    --color-error-foreground: oklch(100% 0 none);
+
+    --color-warning: oklch(70.463% 0.17 80.234);
+    --color-warning-50: oklch(92.627% 0.11 80.234);
+    --color-warning-100: oklch(90.164% 0.13 80.234);
+    --color-warning-200: oklch(85.239% 0.14 80.234);
+    --color-warning-300: oklch(80.313% 0.15 80.234);
+    --color-warning-400: oklch(75.388% 0.16 80.234);
+    --color-warning-500: oklch(70.463% 0.17 80.234);
+    --color-warning-600: oklch(65.537% 0.18 80.234);
+    --color-warning-700: oklch(60.612% 0.19 80.234);
+    --color-warning-800: oklch(55.687% 0.20 80.234);
+    --color-warning-900: oklch(50.761% 0.21 80.234);
+    --color-warning-950: oklch(48.299% 0.22 80.234);
+    --color-warning-foreground: oklch(100% 0 none);
+
+    --default-transition-duration: 0.3s;
+}

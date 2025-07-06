@@ -1,0 +1,88 @@
+{
+  "name": "@mauriziocarella/ui-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./ui-kit.css": "./dist/ui-kit.css",
+    "./Button": {
+      "types": "./dist/components/Button/index.d.ts",
+      "import": "./dist/components/Button/index.es.js",
+      "require": "./dist/components/Button/index.cjs.js"
+    },
+    "./Chip": {
+      "types": "./dist/components/Chip/index.d.ts",
+      "import": "./dist/components/Chip/index.es.js",
+      "require": "./dist/components/Chip/index.cjs.js"
+    },
+    "./Icon": {
+      "types": "./dist/components/Icon/index.d.ts",
+      "import": "./dist/components/Icon/index.es.js",
+      "require": "./dist/components/Icon/index.cjs.js"
+    },
+    "./Input": {
+      "types": "./dist/components/Input/index.d.ts",
+      "import": "./dist/components/Input/index.es.js",
+      "require": "./dist/components/Input/index.cjs.js"
+    },
+    "./Loading": {
+      "types": "./dist/components/Loading/index.d.ts",
+      "import": "./dist/components/Loading/index.es.js",
+      "require": "./dist/components/Loading/index.cjs.js"
+    },
+    "./Reveal": {
+      "types": "./dist/components/Reveal/index.d.ts",
+      "import": "./dist/components/Reveal/index.es.js",
+      "require": "./dist/components/Reveal/index.cjs.js"
+    },
+    "./Table": {
+      "types": "./dist/components/Table/index.d.ts",
+      "import": "./dist/components/Table/index.es.js",
+      "require": "./dist/components/Table/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "build:tsup": "tsup",
+    "dev:tsup": "tsup --watch",
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.0.10",
+    "@types/react": "^19.1.8",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-storybook": "^9.0.15",
+    "react-docgen-typescript": "^2.4.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.11",
+    "tsup": "^8.5.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.2",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@tanstack/react-table": "^8.21.3",
+    "lucide-react": "^0.525.0"
+  }
+}
