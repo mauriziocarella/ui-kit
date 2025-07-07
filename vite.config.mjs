@@ -2,6 +2,7 @@ import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import tailwindcss from '@tailwindcss/vite';
+import {viteStaticCopy} from 'vite-plugin-static-copy';
 import path from 'node:path';
 import {fileURLToPath} from 'url';
 import * as fs from 'node:fs';
@@ -36,14 +37,20 @@ export default defineConfig({
 			// include: Object.values(getComponentEntries()),
 			exclude: ['node_modules/**', 'src/components/**/*.stories.tsx'],
 		}),
+		viteStaticCopy({
+			targets: [
+				{
+					src: 'src/styles/theme.css',
+					dest: '',
+				},
+			],
+		}),
 	],
 	build: {
-		// outDir: 'dist',
 		lib: {
 			entry: getComponentEntries(),
 			name: 'UiKit',
 			fileName: (format, entryName) => `${entryName ? `${entryName}/index` : 'index'}.${format}.js`,
-			// cssFileName: (format) => `ui-kit.${format}.css`,
 		},
 		cssCodeSplit: false,
 		rollupOptions: {
@@ -54,13 +61,6 @@ export default defineConfig({
 					'react': 'React',
 					'react-dom': 'ReactDOM',
 				},
-				// assetFileNames: ({name, names}) => {
-				// 	console.log(name, names)
-				// 	if (name && name.endsWith('.css')) {
-				// 		return '[name]';
-				// 	}
-				// 	return 'assets/[name].[hash][extname]';
-				// },
 			},
 		},
 	},
