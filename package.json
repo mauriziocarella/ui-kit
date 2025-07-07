@@ -1,7 +1,7 @@
 {
 	"name": "@mauriziocarella/ui-kit",
 	"repository": "github:mauriziocarella/ui-kit",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.es.js",
